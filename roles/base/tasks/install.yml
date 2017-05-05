@@ -1,0 +1,6 @@
+---
+- name: configure base
+  template: >
+    src=base.conf.j2
+    dest=/etc/base.conf
+  notify: hello handler
